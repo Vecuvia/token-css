@@ -1,0 +1,86 @@
+@mixin flex-column {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+@mixin flex-grow {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
+
+@mixin flex-no-shrink {
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+}
+
+body, .flex-column {
+  @include flex-column;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  padding: 1em;
+  background-color: $primary-color;
+  color: contrasting-color($primary-color);
+  @include flex-row;
+  align-items: center;
+  -webkit-align-items: center;
+  box-sizing: border-box;
+}
+
+.navbar-fixed {
+  position: fixed;
+}
+
+.offset-navbar {
+  margin-top: 3em;
+}
+
+.navbar-brand {
+  margin: 0;
+  font-size: 1em;
+  @include flex-grow;
+  @include flex-no-shrink;
+}
+
+.navbar-links a {
+  color: contrasting-color($primary-color);
+}
+
+/* Header */
+
+.header {
+  padding: 1em;
+  background-color: $primary-color;
+  color: contrasting-color($primary-color);
+  @include flex-no-shrink;
+  box-sizing: border-box;
+}
+
+/* Container */
+
+.container {
+  width: $max-percent-width;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/* Main content */
+
+.main {
+  @include flex-grow;
+  @include flex-no-shrink;
+}
