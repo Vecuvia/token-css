@@ -184,6 +184,11 @@ a:hover {
   -webkit-flex: 1;
 }
 
+.x-small-auto {
+  flex: 1 0;
+  -webkit-flex: 1 0;
+}
+
 .x-small-full {
   flex: 0 0 100%;
   -webkit-flex: 0 0 100%;
@@ -205,6 +210,10 @@ a:hover {
 }
 
 @media screen and (min-width: 24em) {
+  .small-auto {
+    flex: 1 0;
+    -webkit-flex: 1 0;
+  }
   .small-full {
     flex: 0 0 100%;
     -webkit-flex: 0 0 100%;
@@ -224,6 +233,10 @@ a:hover {
 }
 
 @media screen and (min-width: 48em) {
+  .large-auto {
+    flex: 1 0;
+    -webkit-flex: 1 0;
+  }
   .large-full {
     flex: 0 0 100%;
     -webkit-flex: 0 0 100%;
