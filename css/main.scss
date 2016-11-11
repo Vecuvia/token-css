@@ -5,8 +5,9 @@ $line-height: 1.5;
 $max-percent-width: 90%;
 $max-width: 60em;
 
-$small-breakpoint: 24em;
-$large-breakpoint: 48em;
+$small-breakpoint: 30em;
+$medium-breakpoint: 60em;
+$large-breakpoint: 80em;
 
 $background-color: #ffffff;
 $light-text-color: #ffffff;
@@ -55,3 +56,4 @@ html, body {
 @import "buttons";
 @import "alerts";
 @import "wells";
+@import "modals";

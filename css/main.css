@@ -93,6 +93,19 @@ body, .flex-column {
   flex-shrink: 0;
   -webkit-flex-shrink: 0; }
 
+/* Utility classes */
+.padded {
+  padding: 1em; }
+
+.full-height {
+  height: 100%; }
+
+@media screen and (min-width: 80em) {
+  .large-full-height {
+    height: 100%; }
+
+  .large-scrollable {
+    overflow-y: scroll; } }
 /* Typography */
 body {
   font-family: sans-serif;
@@ -166,6 +179,52 @@ hr {
   width: 90%;
   max-width: 60em; }
 
+/* Headers */
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.7em; }
+
+h3 {
+  font-size: 1.4em; }
+
+h4 {
+  font-size: 1.1em; }
+
+h5, h6 {
+  font-size: 1em; }
+
+@media screen and (min-width: 30em) {
+  h1 {
+    font-size: 2.5em; }
+
+  h2 {
+    font-size: 2.1em; }
+
+  h3 {
+    font-size: 1.7em; }
+
+  h4 {
+    font-size: 1.3em; }
+
+  h5, h6 {
+    font-size: 1em; } }
+@media screen and (min-width: 60em) {
+  h1 {
+    font-size: 3em; }
+
+  h2 {
+    font-size: 2.5em; }
+
+  h3 {
+    font-size: 2em; }
+
+  h4 {
+    font-size: 1.5em; }
+
+  h5, h6 {
+    font-size: 1em; } }
 /* Responsive grid */
 .row {
   display: flex;
@@ -187,11 +246,15 @@ hr {
   flex: 1 0;
   -webkit-flex: 1 0; }
 
-@media screen and (min-width: 24em) {
+@media screen and (min-width: 30em) {
   .small-auto {
     flex: 1 0;
     -webkit-flex: 1 0; } }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 60em) {
+  .medium-auto {
+    flex: 1 0;
+    -webkit-flex: 1 0; } }
+@media screen and (min-width: 80em) {
   .large-auto {
     flex: 1 0;
     -webkit-flex: 1 0; } }
@@ -199,11 +262,15 @@ hr {
   flex: 0 0 100%;
   -webkit-flex: 0 0 100%; }
 
-@media screen and (min-width: 24em) {
+@media screen and (min-width: 30em) {
   .small-full {
     flex: 0 0 100%;
     -webkit-flex: 0 0 100%; } }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 60em) {
+  .medium-full {
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%; } }
+@media screen and (min-width: 80em) {
   .large-full {
     flex: 0 0 100%;
     -webkit-flex: 0 0 100%; } }
@@ -211,11 +278,15 @@ hr {
   flex: 0 0 50%;
   -webkit-flex: 0 0 50%; }
 
-@media screen and (min-width: 24em) {
+@media screen and (min-width: 30em) {
   .small-half {
     flex: 0 0 50%;
     -webkit-flex: 0 0 50%; } }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 60em) {
+  .medium-half {
+    flex: 0 0 50%;
+    -webkit-flex: 0 0 50%; } }
+@media screen and (min-width: 80em) {
   .large-half {
     flex: 0 0 50%;
     -webkit-flex: 0 0 50%; } }
@@ -223,11 +294,15 @@ hr {
   flex: 0 0 33.33333%;
   -webkit-flex: 0 0 33.33333%; }
 
-@media screen and (min-width: 24em) {
+@media screen and (min-width: 30em) {
   .small-third {
     flex: 0 0 33.33333%;
     -webkit-flex: 0 0 33.33333%; } }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 60em) {
+  .medium-third {
+    flex: 0 0 33.33333%;
+    -webkit-flex: 0 0 33.33333%; } }
+@media screen and (min-width: 80em) {
   .large-third {
     flex: 0 0 33.33333%;
     -webkit-flex: 0 0 33.33333%; } }
@@ -235,11 +310,15 @@ hr {
   flex: 0 0 25%;
   -webkit-flex: 0 0 25%; }
 
-@media screen and (min-width: 24em) {
+@media screen and (min-width: 30em) {
   .small-fourth {
     flex: 0 0 25%;
     -webkit-flex: 0 0 25%; } }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 60em) {
+  .medium-fourth {
+    flex: 0 0 25%;
+    -webkit-flex: 0 0 25%; } }
+@media screen and (min-width: 80em) {
   .large-fourth {
     flex: 0 0 25%;
     -webkit-flex: 0 0 25%; } }
@@ -328,5 +407,33 @@ hr {
 
 .well-title {
   margin-top: 0; }
+
+/* Modals */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fefefe;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.modal-content {
+  position: fixed;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); }
+
+@media screen and (min-width: 24em) {
+  .modal-content {
+    width: 70%; } }
+@media screen and (min-width: 48em) {
+  .modal-content {
+    width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -35,6 +35,12 @@ $grid: (
       -webkit-flex: $size;
     }
   }
+  @media screen and (min-width: $medium-breakpoint) {
+    .medium-#{$suffix} {
+      flex: $size;
+      -webkit-flex: $size;
+    }
+  }
   @media screen and (min-width: $large-breakpoint) {
     .large-#{$suffix} {
       flex: $size;
