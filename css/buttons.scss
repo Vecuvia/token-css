@@ -1,0 +1,37 @@
+/* Buttons */
+
+.button {
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 0px;
+  padding: 0.5em;
+  box-shadow: 2px 2px 5px $shadow-color;
+  display: inline-block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.button-small {
+  padding: 0em;
+}
+
+.button-large {
+  padding: 1em;
+}
+
+.button-x-large {
+  padding: 1.5em;
+}
+
+.button-default {
+  background-color: $background-color;
+  color: contrasting-color($background-color);
+}
+
+@each $role, $color in $roles {
+  .button-#{$role} {
+    background-color: $color;
+    color: contrasting-color($color);
+  }
+}

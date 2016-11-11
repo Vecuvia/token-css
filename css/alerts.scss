@@ -1,0 +1,15 @@
+/* Alerts */
+
+.alert {
+  padding: 1em;
+  box-sizing: border-box;
+  border-left: 4px solid;
+}
+
+@each $role, $color in $roles {
+  .alert-#{$role} {
+    border-left-color: $color;
+    background-color: map-get($roles-muted, $role);
+    color: contrasting-color(map-get($roles-muted, $role));
+  }
+}

@@ -26,6 +26,10 @@ body, .flex-column {
   @include flex-column;
 }
 
+.flex-row {
+  @include flex-row;
+}
+
 /* Navbar */
 
 .navbar {
@@ -82,5 +86,28 @@ body, .flex-column {
 
 .main {
   @include flex-grow;
+  @include flex-no-shrink;
+}
+
+/* Footer */
+
+.footer {
+  background-color: $primary-color;
+  color: contrasting-color($primary-color);
+  padding: 1em;
+  @include flex-row;
+  @include flex-no-shrink;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-left {
+  @include flex-grow;
+  @include flex-no-shrink;
+}
+
+.footer-right {
   @include flex-no-shrink;
 }
