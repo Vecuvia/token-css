@@ -400,3 +400,38 @@ h5, h6 {
     overflow-y: scroll;
   }
 }
+
+/* Modals */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fefefe;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: fixed;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 24em) {
+  .modal-content {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .modal-content {
+    width: 50%;
+  }
+}
