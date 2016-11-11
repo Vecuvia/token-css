@@ -1,6 +1,9 @@
 body, html {
   height: 100%;
   margin: 0;
+}
+
+body, html, input, textarea {
   font-family: sans-serif;
   line-height: 1.6;
 }
@@ -51,6 +54,10 @@ body {
   text-decoration: none;
 }
 
+.links a:hover {
+  text-decoration: underline;
+}
+
 .container {
   width: 90%;
   max-width: 60em;
@@ -84,10 +91,24 @@ body {
   padding: 1em;
   flex-shrink: 0;
   -webkit-flex-shrink: 0;
+  display: flex;
+  display: -webkit-flex;
 }
 
-.footer p {
+footer p {
   margin: 0;
+}
+
+.footer .left {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+}
+
+.footer .right {
+  -flex-shrink: 0;
+  -webkit-flex-shrink: 0;
 }
 
 /* Buttons */
@@ -100,6 +121,8 @@ body {
   border: 0px solid #9e9e9e;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
   display: inline-block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .button-full {
@@ -214,8 +237,36 @@ body {
   background-color: #212121;
 }
 
+.info {
+  background-color: #2196f3;
+}
+
+.success {
+  background-color: #4caf50;
+}
+
+.danger {
+  background-color: #f44336;
+}
+
 .text-white {
   color: #fff;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-info {
+  color: #2196f3;
+}
+
+.text-success {
+  color: #4caf50;
+}
+
+.text-danger {
+  color: #f44336;
 }
 
 /* Images */
