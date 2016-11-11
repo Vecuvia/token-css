@@ -156,6 +156,16 @@ a:hover {
 .bg-danger-muted {
   background-color: #ef9a9a; }
 
+/* Images */
+.image {
+  width: 100%;
+  height: auto; }
+
+/* Horizontal rules */
+hr {
+  width: 90%;
+  max-width: 60em; }
+
 /* Responsive grid */
 .row {
   display: flex;
@@ -254,6 +264,9 @@ a:hover {
 .button-x-large {
   padding: 1.5em; }
 
+.button-full {
+  width: 100%; }
+
 .button-default {
   background-color: #ffffff;
   color: #000000; }
@@ -299,5 +312,21 @@ a:hover {
   border-left-color: #f44336;
   background-color: #ef9a9a;
   color: #000000; }
+
+.well {
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.well-content {
+  padding: 1em; }
+
+.well-image {
+  padding: -1em; }
+
+.well-title {
+  margin-top: 0; }
 
 /*# sourceMappingURL=main.css.map */

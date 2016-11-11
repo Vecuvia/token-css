@@ -48,3 +48,17 @@ a:hover {
     background-color: $color;
   }
 }
+
+/* Images */
+
+.image  {
+  width: 100%;
+  height: auto;
+}
+
+/* Horizontal rules */
+
+hr {
+  width: $max-percent-width;
+  max-width: $max-width;
+}

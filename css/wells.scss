@@ -1,0 +1,19 @@
+.well {
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px $shadow-color;
+  background-color: $background-color;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.well-content {
+  padding: 1em;
+}
+
+.well-image {
+  padding: -1em;
+}
+
+.well-title {
+  margin-top: 0;
+}
