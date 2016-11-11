@@ -5,3 +5,40 @@
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
 }
+
+.gutter > .col {
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.col {
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+$grid: (
+  auto: 1 0,
+  full: 0 0 100%,
+  half: 0 0 50%,
+  third: 0 0 33.3333333333%,
+  fourth: 0 0 25%
+);
+
+@each $suffix, $size in $grid {
+  .x-small-#{$suffix} {
+    flex: $size;
+    -webkit-flex: $size;
+  }
+  @media screen and (min-width: $small-breakpoint) {
+    .small-#{$suffix} {
+      flex: $size;
+      -webkit-flex: $size;
+    }
+  }
+  @media screen and (min-width: $large-breakpoint) {
+    .large-#{$suffix} {
+      flex: $size;
+      -webkit-flex: $size;
+    }
+  }
+}

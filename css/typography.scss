@@ -38,4 +38,13 @@ a:hover {
   .text-#{$role} {
     color: $color;
   }
+  .bg-#{$role} {
+    background-color: $color;
+  }
+}
+
+@each $role, $color in $roles-muted {
+  .bg-#{$role}-muted {
+    background-color: $color;
+  }
 }

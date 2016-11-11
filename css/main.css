@@ -123,14 +123,38 @@ a:hover {
 .text-primary {
   color: #212121; }
 
+.bg-primary {
+  background-color: #212121; }
+
 .text-info {
   color: #2196f3; }
+
+.bg-info {
+  background-color: #2196f3; }
 
 .text-success {
   color: #4caf50; }
 
+.bg-success {
+  background-color: #4caf50; }
+
 .text-danger {
   color: #f44336; }
+
+.bg-danger {
+  background-color: #f44336; }
+
+.bg-primary-muted {
+  background-color: #9e9e9e; }
+
+.bg-info-muted {
+  background-color: #90caf9; }
+
+.bg-success-muted {
+  background-color: #a5d6a7; }
+
+.bg-danger-muted {
+  background-color: #ef9a9a; }
 
 /* Responsive grid */
 .row {
@@ -141,6 +165,74 @@ a:hover {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap; }
 
+.gutter > .col {
+  padding: 1em;
+  box-sizing: border-box; }
+
+.col {
+  flex: 1;
+  -webkit-flex: 1; }
+
+.x-small-auto {
+  flex: 1 0;
+  -webkit-flex: 1 0; }
+
+@media screen and (min-width: 24em) {
+  .small-auto {
+    flex: 1 0;
+    -webkit-flex: 1 0; } }
+@media screen and (min-width: 48em) {
+  .large-auto {
+    flex: 1 0;
+    -webkit-flex: 1 0; } }
+.x-small-full {
+  flex: 0 0 100%;
+  -webkit-flex: 0 0 100%; }
+
+@media screen and (min-width: 24em) {
+  .small-full {
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%; } }
+@media screen and (min-width: 48em) {
+  .large-full {
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%; } }
+.x-small-half {
+  flex: 0 0 50%;
+  -webkit-flex: 0 0 50%; }
+
+@media screen and (min-width: 24em) {
+  .small-half {
+    flex: 0 0 50%;
+    -webkit-flex: 0 0 50%; } }
+@media screen and (min-width: 48em) {
+  .large-half {
+    flex: 0 0 50%;
+    -webkit-flex: 0 0 50%; } }
+.x-small-third {
+  flex: 0 0 33.33333%;
+  -webkit-flex: 0 0 33.33333%; }
+
+@media screen and (min-width: 24em) {
+  .small-third {
+    flex: 0 0 33.33333%;
+    -webkit-flex: 0 0 33.33333%; } }
+@media screen and (min-width: 48em) {
+  .large-third {
+    flex: 0 0 33.33333%;
+    -webkit-flex: 0 0 33.33333%; } }
+.x-small-fourth {
+  flex: 0 0 25%;
+  -webkit-flex: 0 0 25%; }
+
+@media screen and (min-width: 24em) {
+  .small-fourth {
+    flex: 0 0 25%;
+    -webkit-flex: 0 0 25%; } }
+@media screen and (min-width: 48em) {
+  .large-fourth {
+    flex: 0 0 25%;
+    -webkit-flex: 0 0 25%; } }
 /* Buttons */
 .button {
   font-size: 1em;
