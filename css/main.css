@@ -8,7 +8,7 @@ body, html, input, textarea {
   line-height: 1.6;
 }
 
-body {
+body, .flex-container {
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -72,6 +72,7 @@ body {
   background-color: #212121;
   flex-shrink: 0;
   -webkit-flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .center {
@@ -109,6 +110,16 @@ footer p {
 .footer .right {
   -flex-shrink: 0;
   -webkit-flex-shrink: 0;
+}
+
+/* Anchors */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Buttons */
@@ -276,6 +287,13 @@ footer p {
   height: auto;
 }
 
+/* Horizontal rules */
+
+hr {
+  width: 90%;
+  max-width: 60em;
+}
+
 /* Wells */
 
 .well {
@@ -349,5 +367,23 @@ h5, h6 {
   }
   h5, h6 {
     font-size: 1em;
+  }
+}
+
+.padded {
+  padding: 1em;
+}
+
+.full-height {
+  height: 100%;
+}
+
+@media screen and (min-width: 48em) {
+  .large-full-height {
+    height: 100%;
+  }
+
+  .large-scrollable {
+    overflow-y: scroll;
   }
 }
