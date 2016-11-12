@@ -11,9 +11,14 @@
 }
 
 .well-image {
-  padding: -1em;
+  //placeholder
 }
 
 .well-title {
   margin-top: 0;
+}
+
+.well-action {
+  border-top: 1px solid $background-color-darker;
+  padding: 0 1em;
 }

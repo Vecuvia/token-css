@@ -438,25 +438,59 @@ h5, h6 {
 .button-outline {
   border: 2px solid #212121; }
 
+.button-flat {
+  box-shadow: 0px 0px; }
+
 .button-default {
   background-color: #ffffff;
-  color: #212121; }
+  color: #212121;
+  transition: background-color 1s; }
+
+.button-default:hover {
+  background-color: #e6e6e6; }
+
+.button-default:active {
+  background-color: #cccccc; }
 
 .button-primary {
   background-color: #212121;
   color: #ffffff; }
 
+.button-primary:hover {
+  background-color: #080808; }
+
+.button-primary:active {
+  background-color: black; }
+
 .button-info {
   background-color: #2196f3;
   color: #212121; }
+
+.button-info:hover {
+  background-color: #0c7cd5; }
+
+.button-info:active {
+  background-color: #0960a5; }
 
 .button-success {
   background-color: #4caf50;
   color: #ffffff; }
 
+.button-success:hover {
+  background-color: #3d8b40; }
+
+.button-success:active {
+  background-color: #2d682f; }
+
 .button-danger {
   background-color: #f44336;
   color: #212121; }
+
+.button-danger:hover {
+  background-color: #ea1c0d; }
+
+.button-danger:active {
+  background-color: #ba160a; }
 
 /* Alerts */
 .alert {
@@ -494,11 +528,12 @@ h5, h6 {
 .well-content {
   padding: 1em; }
 
-.well-image {
-  padding: -1em; }
-
 .well-title {
   margin-top: 0; }
+
+.well-action {
+  border-top: 1px solid #eeeeee;
+  padding: 0 1em; }
 
 /* Modals */
 .modal {

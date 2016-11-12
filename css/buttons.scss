@@ -41,14 +41,32 @@
   border: 2px solid $primary-color;
 }
 
+.button-flat {
+  box-shadow: 0px 0px;
+}
+
 .button-default {
   background-color: $background-color;
   color: contrasting-color($background-color);
+}
+
+.button-default:hover {
+  background-color: darken($background-color, 10%);
+}
+
+.button-default:active {
+  background-color: darken($background-color, 20%);
 }
 
 @each $role, $color in $roles {
   .button-#{$role} {
     background-color: $color;
     color: contrasting-color($color);
+  }
+  .button-#{$role}:hover {
+    background-color: darken($color, 10%);
+  }
+  .button-#{$role}:active {
+    background-color: darken($color, 20%);
   }
 }
