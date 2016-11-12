@@ -29,18 +29,27 @@ $grid: (
     flex: $size;
     -webkit-flex: $size;
   }
+}
+
+@each $suffix, $size in $grid {
   @media screen and (min-width: $small-breakpoint) {
     .small-#{$suffix} {
       flex: $size;
       -webkit-flex: $size;
     }
   }
+}
+
+@each $suffix, $size in $grid {
   @media screen and (min-width: $medium-breakpoint) {
     .medium-#{$suffix} {
       flex: $size;
       -webkit-flex: $size;
     }
   }
+}
+
+@each $suffix, $size in $grid {
   @media screen and (min-width: $large-breakpoint) {
     .large-#{$suffix} {
       flex: $size;

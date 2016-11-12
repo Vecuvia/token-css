@@ -1,4 +1,5 @@
 html, body {
+  height: 100%;
   margin: 0; }
 
 body, .flex-column {
@@ -93,19 +94,6 @@ body, .flex-column {
   flex-shrink: 0;
   -webkit-flex-shrink: 0; }
 
-/* Utility classes */
-.padded {
-  padding: 1em; }
-
-.full-height {
-  height: 100%; }
-
-@media screen and (min-width: 80em) {
-  .large-full-height {
-    height: 100%; }
-
-  .large-scrollable {
-    overflow-y: scroll; } }
 /* Typography */
 body {
   font-family: sans-serif;
@@ -246,78 +234,78 @@ h5, h6 {
   flex: 1 0;
   -webkit-flex: 1 0; }
 
-@media screen and (min-width: 30em) {
-  .small-auto {
-    flex: 1 0;
-    -webkit-flex: 1 0; } }
-@media screen and (min-width: 60em) {
-  .medium-auto {
-    flex: 1 0;
-    -webkit-flex: 1 0; } }
-@media screen and (min-width: 80em) {
-  .large-auto {
-    flex: 1 0;
-    -webkit-flex: 1 0; } }
 .x-small-full {
   flex: 0 0 100%;
   -webkit-flex: 0 0 100%; }
 
-@media screen and (min-width: 30em) {
-  .small-full {
-    flex: 0 0 100%;
-    -webkit-flex: 0 0 100%; } }
-@media screen and (min-width: 60em) {
-  .medium-full {
-    flex: 0 0 100%;
-    -webkit-flex: 0 0 100%; } }
-@media screen and (min-width: 80em) {
-  .large-full {
-    flex: 0 0 100%;
-    -webkit-flex: 0 0 100%; } }
 .x-small-half {
   flex: 0 0 50%;
   -webkit-flex: 0 0 50%; }
 
-@media screen and (min-width: 30em) {
-  .small-half {
-    flex: 0 0 50%;
-    -webkit-flex: 0 0 50%; } }
-@media screen and (min-width: 60em) {
-  .medium-half {
-    flex: 0 0 50%;
-    -webkit-flex: 0 0 50%; } }
-@media screen and (min-width: 80em) {
-  .large-half {
-    flex: 0 0 50%;
-    -webkit-flex: 0 0 50%; } }
 .x-small-third {
   flex: 0 0 33.33333%;
   -webkit-flex: 0 0 33.33333%; }
 
-@media screen and (min-width: 30em) {
-  .small-third {
-    flex: 0 0 33.33333%;
-    -webkit-flex: 0 0 33.33333%; } }
-@media screen and (min-width: 60em) {
-  .medium-third {
-    flex: 0 0 33.33333%;
-    -webkit-flex: 0 0 33.33333%; } }
-@media screen and (min-width: 80em) {
-  .large-third {
-    flex: 0 0 33.33333%;
-    -webkit-flex: 0 0 33.33333%; } }
 .x-small-fourth {
   flex: 0 0 25%;
   -webkit-flex: 0 0 25%; }
 
 @media screen and (min-width: 30em) {
+  .small-auto {
+    flex: 1 0;
+    -webkit-flex: 1 0; } }
+@media screen and (min-width: 30em) {
+  .small-full {
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%; } }
+@media screen and (min-width: 30em) {
+  .small-half {
+    flex: 0 0 50%;
+    -webkit-flex: 0 0 50%; } }
+@media screen and (min-width: 30em) {
+  .small-third {
+    flex: 0 0 33.33333%;
+    -webkit-flex: 0 0 33.33333%; } }
+@media screen and (min-width: 30em) {
   .small-fourth {
     flex: 0 0 25%;
     -webkit-flex: 0 0 25%; } }
 @media screen and (min-width: 60em) {
+  .medium-auto {
+    flex: 1 0;
+    -webkit-flex: 1 0; } }
+@media screen and (min-width: 60em) {
+  .medium-full {
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%; } }
+@media screen and (min-width: 60em) {
+  .medium-half {
+    flex: 0 0 50%;
+    -webkit-flex: 0 0 50%; } }
+@media screen and (min-width: 60em) {
+  .medium-third {
+    flex: 0 0 33.33333%;
+    -webkit-flex: 0 0 33.33333%; } }
+@media screen and (min-width: 60em) {
   .medium-fourth {
     flex: 0 0 25%;
     -webkit-flex: 0 0 25%; } }
+@media screen and (min-width: 80em) {
+  .large-auto {
+    flex: 1 0;
+    -webkit-flex: 1 0; } }
+@media screen and (min-width: 80em) {
+  .large-full {
+    flex: 0 0 100%;
+    -webkit-flex: 0 0 100%; } }
+@media screen and (min-width: 80em) {
+  .large-half {
+    flex: 0 0 50%;
+    -webkit-flex: 0 0 50%; } }
+@media screen and (min-width: 80em) {
+  .large-third {
+    flex: 0 0 33.33333%;
+    -webkit-flex: 0 0 33.33333%; } }
 @media screen and (min-width: 80em) {
   .large-fourth {
     flex: 0 0 25%;
@@ -435,5 +423,24 @@ h5, h6 {
 @media screen and (min-width: 48em) {
   .modal-content {
     width: 50%; } }
+/* Utility classes */
+.padded {
+  padding: 1em; }
+
+.full-height {
+  height: 100%; }
+
+@media screen and (min-width: 60em) {
+  .medium-full-height {
+    height: 100%; }
+
+  .medium-scrollable {
+    overflow-y: scroll; } }
+@media screen and (min-width: 80em) {
+  .large-full-height {
+    height: 100%; }
+
+  .large-scrollable {
+    overflow-y: scroll; } }
 
 /*# sourceMappingURL=main.css.map */
