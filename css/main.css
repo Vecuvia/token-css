@@ -159,6 +159,20 @@ a:hover {
 .bg-danger-muted {
   background-color: #ef9a9a; }
 
+/* Blockquotes */
+blockquote {
+  margin: 1em 0;
+  padding: 1em;
+  border-left: 8px solid #9e9e9e; }
+
+blockquote *:first-child {
+  margin-top: 0; }
+
+blockquote cite {
+  display: block;
+  font-style: italic;
+  text-align: right; }
+
 /* Images */
 .image {
   width: 100%;

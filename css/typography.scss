@@ -51,6 +51,25 @@ a:hover {
   }
 }
 
+/* Blockquotes */
+
+blockquote {
+  margin: 1em 0;
+  padding: 1em;
+  border-left: 8px solid $primary-color-muted;
+}
+
+//Workaround for the margin + padding issue
+blockquote *:first-child {
+  margin-top: 0;
+}
+
+blockquote cite {
+  display: block;
+  font-style: italic;
+  text-align: right;
+}
+
 /* Images */
 
 .image  {
