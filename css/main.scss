@@ -26,12 +26,14 @@ $shadow-color: rgba(0, 0, 0, 0.25);
 $primary-color: #212121;
 $info-color: #2196f3;
 $success-color: #4caf50;
+$warning-color:  #ffc107;
 $danger-color: #f44336;
 
 $roles: (
   primary: $primary-color,
   info: $info-color,
   success: $success-color,
+  warning: $warning-color,
   danger: $danger-color
 );
 

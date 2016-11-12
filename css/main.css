@@ -150,6 +150,15 @@ a:hover {
 .bg-success-muted {
   background-color: #d9eeda; }
 
+.text-warning {
+  color: #ffc107; }
+
+.bg-warning {
+  background-color: #ffc107; }
+
+.bg-warning-muted {
+  background-color: #fff4d3; }
+
 .text-danger {
   color: #f44336; }
 
@@ -481,6 +490,16 @@ h5, h6 {
 .button-success:active {
   background-color: #2d682f; }
 
+.button-warning {
+  background-color: #ffc107;
+  color: #212121; }
+
+.button-warning:hover {
+  background-color: #d39e00; }
+
+.button-warning:active {
+  background-color: #a07800; }
+
 .button-danger {
   background-color: #f44336;
   color: #212121; }
@@ -510,6 +529,11 @@ h5, h6 {
 .alert-success {
   border-left-color: #4caf50;
   background-color: #d9eeda;
+  color: #212121; }
+
+.alert-warning {
+  border-left-color: #ffc107;
+  background-color: #fff4d3;
   color: #212121; }
 
 .alert-danger {
