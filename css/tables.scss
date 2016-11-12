@@ -8,11 +8,11 @@
 }
 
 .table thead th {
-  border-bottom: 2px solid $primary-color-muted;
+  border-bottom: 2px solid lighten($primary-color, 40%);
 }
 
 .table tfoot th {
-  border-top: 2px solid $primary-color-muted;
+  border-top: 2px solid lighten($primary-color, 40%);
 }
 
 .table th, td {
@@ -21,9 +21,9 @@
 }
 
 .table tbody td {
-  border-bottom: 1px solid $primary-color-muted;
+  border-bottom: 1px solid lighten($primary-color, 40%);
 }
 
 .table-striped tbody tr:nth-child(odd) {
-  background-color: $background-color-darker;
+  background-color: darken($background-color, 10%);
 }
