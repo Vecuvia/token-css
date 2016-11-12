@@ -99,6 +99,7 @@ body {
   font-family: sans-serif;
   font-size: 1em;
   line-height: 1.5;
+  background-color: #ffffff;
   color: #212121; }
 
 a {
@@ -252,12 +253,14 @@ h5, h6 {
   -webkit-flex-wrap: wrap; }
 
 .gutter > .col {
-  padding: 1em;
-  box-sizing: border-box; }
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+  margin-bottom: 1em; }
 
 .col {
-  flex: 1;
-  -webkit-flex: 1; }
+  flex: 0 0 100%;
+  -webkit-flex: 0 0 100%; }
 
 .x-small-hidden {
   display: none; }
@@ -528,6 +531,26 @@ h5, h6 {
 
 .table-striped tbody tr:nth-child(odd) {
   background-color: #eeeeee; }
+
+/* Forms */
+input, textarea {
+  box-sizing: border-box; }
+
+label {
+  font-weight: bold; }
+
+:not(.form-inline) > input[type="text"] {
+  width: 100%; }
+
+:not(.form-inline) > input[type="email"] {
+  width: 100%; }
+
+:not(.form-inline) > input[type="password"] {
+  width: 100%; }
+
+:not(.form-inline) > textarea {
+  min-width: 100%;
+  max-width: 100%; }
 
 /* Utility classes */
 .padded {

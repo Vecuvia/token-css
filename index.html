@@ -141,6 +141,43 @@ Your code here
           </tr>
         </tbody>
       </table>
+      <h2>Forms</h2>
+      <form>
+        <label for="nick">Nickname:</label>
+        <input type="text" name="nick">
+        <label for="pass">Password:</label>
+        <input type="password" name="pass">
+        <button type="submit" class="button button-primary">Login</button>
+      </form>
+      <form>
+        <div class="row gutter">
+          <div class="col medium-sixth">
+            <label for="name">Name:</label>
+          </div>
+          <div class="col medium-auto">
+            <input type="text" name="name">
+          </div>
+          <div class="col medium-sixth">
+            <label for="mail">E-mail:</label>
+          </div>
+          <div class="col medium-auto">
+            <input type="email" name="mail">
+          </div>
+        </div>
+        <div class="row gutter">
+          <div class="col">
+            <textarea></textarea>
+          </div>
+        </div>
+      </form>
+      <h3>Inline forms</h3>
+      <form class="form-inline">
+        <label for="nick">Nickname:</label>
+        <input type="text" name="nick">
+        <label for="pass">Password:</label>
+        <input type="password" name="pass">
+        <button type="submit" class="button button-small button-primary">Login</button>
+      </form>
     </section>
     <section class="bg-primary text-light">
       <div class="container">
@@ -180,7 +217,7 @@ Your code here
           </aside>
         </div>
       </div>
-      <div class="col">
+      <div class="col medium-auto">
         <div class="container">
           <h2>Grid</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

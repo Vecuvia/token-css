@@ -1,0 +1,30 @@
+/* Forms */
+
+input, textarea {
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: bold;
+}
+
+:not(.form-inline) > label {
+  width: 100%
+}
+
+$input-types: (text, email, password);
+
+@each $type in $input-types {
+  :not(.form-inline) > input[type="#{$type}"] {
+    width: 100%;
+  }
+}
+
+:not(.form-inline) > textarea {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+:not(.form-inline) > select {
+  width: 100%
+}
