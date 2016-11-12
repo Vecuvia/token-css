@@ -98,7 +98,8 @@ body, .flex-column {
 body {
   font-family: sans-serif;
   font-size: 1em;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #212121; }
 
 a {
   text-decoration: none; }
@@ -119,7 +120,7 @@ a:hover {
   color: #ffffff; }
 
 .text-dark {
-  color: #000000; }
+  color: #212121; }
 
 .text-primary {
   color: #212121; }
@@ -411,7 +412,7 @@ h5, h6 {
 
 .button-default {
   background-color: #ffffff;
-  color: #000000; }
+  color: #212121; }
 
 .button-primary {
   background-color: #212121;
@@ -419,7 +420,7 @@ h5, h6 {
 
 .button-info {
   background-color: #2196f3;
-  color: #000000; }
+  color: #212121; }
 
 .button-success {
   background-color: #4caf50;
@@ -427,7 +428,7 @@ h5, h6 {
 
 .button-danger {
   background-color: #f44336;
-  color: #000000; }
+  color: #212121; }
 
 /* Alerts */
 .alert {
@@ -438,22 +439,22 @@ h5, h6 {
 .alert-primary {
   border-left-color: #212121;
   background-color: #9e9e9e;
-  color: #000000; }
+  color: #212121; }
 
 .alert-info {
   border-left-color: #2196f3;
   background-color: #90caf9;
-  color: #000000; }
+  color: #212121; }
 
 .alert-success {
   border-left-color: #4caf50;
   background-color: #a5d6a7;
-  color: #000000; }
+  color: #212121; }
 
 .alert-danger {
   border-left-color: #f44336;
   background-color: #ef9a9a;
-  color: #000000; }
+  color: #212121; }
 
 .well {
   border-radius: 2px;
