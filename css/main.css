@@ -404,7 +404,7 @@ h5, h6 {
   box-sizing: border-box; }
 
 .button-small {
-  padding: 0em; }
+  padding: 0 0.5em; }
 
 .button-large {
   padding: 1em; }
