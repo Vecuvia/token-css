@@ -230,6 +230,9 @@ h5, h6 {
   flex: 1;
   -webkit-flex: 1; }
 
+.x-small-hidden {
+  display: none; }
+
 .x-small-auto {
   flex: 1 0;
   -webkit-flex: 1 0; }
@@ -251,62 +254,71 @@ h5, h6 {
   -webkit-flex: 0 0 25%; }
 
 @media screen and (min-width: 30em) {
+  .small-hidden {
+    display: none; }
+
   .small-auto {
     flex: 1 0;
-    -webkit-flex: 1 0; } }
-@media screen and (min-width: 30em) {
+    -webkit-flex: 1 0; }
+
   .small-full {
     flex: 0 0 100%;
-    -webkit-flex: 0 0 100%; } }
-@media screen and (min-width: 30em) {
+    -webkit-flex: 0 0 100%; }
+
   .small-half {
     flex: 0 0 50%;
-    -webkit-flex: 0 0 50%; } }
-@media screen and (min-width: 30em) {
+    -webkit-flex: 0 0 50%; }
+
   .small-third {
     flex: 0 0 33.33333%;
-    -webkit-flex: 0 0 33.33333%; } }
-@media screen and (min-width: 30em) {
+    -webkit-flex: 0 0 33.33333%; }
+
   .small-fourth {
     flex: 0 0 25%;
     -webkit-flex: 0 0 25%; } }
 @media screen and (min-width: 60em) {
+  .medium-hidden {
+    display: none; }
+
   .medium-auto {
     flex: 1 0;
-    -webkit-flex: 1 0; } }
-@media screen and (min-width: 60em) {
+    -webkit-flex: 1 0; }
+
   .medium-full {
     flex: 0 0 100%;
-    -webkit-flex: 0 0 100%; } }
-@media screen and (min-width: 60em) {
+    -webkit-flex: 0 0 100%; }
+
   .medium-half {
     flex: 0 0 50%;
-    -webkit-flex: 0 0 50%; } }
-@media screen and (min-width: 60em) {
+    -webkit-flex: 0 0 50%; }
+
   .medium-third {
     flex: 0 0 33.33333%;
-    -webkit-flex: 0 0 33.33333%; } }
-@media screen and (min-width: 60em) {
+    -webkit-flex: 0 0 33.33333%; }
+
   .medium-fourth {
     flex: 0 0 25%;
     -webkit-flex: 0 0 25%; } }
 @media screen and (min-width: 80em) {
+  .large-hidden {
+    display: none; }
+
   .large-auto {
     flex: 1 0;
-    -webkit-flex: 1 0; } }
-@media screen and (min-width: 80em) {
+    -webkit-flex: 1 0; }
+
   .large-full {
     flex: 0 0 100%;
-    -webkit-flex: 0 0 100%; } }
-@media screen and (min-width: 80em) {
+    -webkit-flex: 0 0 100%; }
+
   .large-half {
     flex: 0 0 50%;
-    -webkit-flex: 0 0 50%; } }
-@media screen and (min-width: 80em) {
+    -webkit-flex: 0 0 50%; }
+
   .large-third {
     flex: 0 0 33.33333%;
-    -webkit-flex: 0 0 33.33333%; } }
-@media screen and (min-width: 80em) {
+    -webkit-flex: 0 0 33.33333%; }
+
   .large-fourth {
     flex: 0 0 25%;
     -webkit-flex: 0 0 25%; } }

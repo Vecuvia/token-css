@@ -24,6 +24,16 @@ $grid: (
   fourth: 0 0 25%
 );
 
+$breakpoints: (
+  small: $small-breakpoint,
+  medium: $medium-breakpoint,
+  large: $large-breakpoint
+);
+
+.x-small-hidden {
+  display: none;
+}
+
 @each $suffix, $size in $grid {
   .x-small-#{$suffix} {
     flex: $size;
@@ -31,29 +41,16 @@ $grid: (
   }
 }
 
-@each $suffix, $size in $grid {
-  @media screen and (min-width: $small-breakpoint) {
-    .small-#{$suffix} {
-      flex: $size;
-      -webkit-flex: $size;
+@each $prefix, $breakpoint in $breakpoints {
+  @media screen and (min-width: $breakpoint) {
+    .#{$prefix}-hidden {
+      display: none;
     }
-  }
-}
-
-@each $suffix, $size in $grid {
-  @media screen and (min-width: $medium-breakpoint) {
-    .medium-#{$suffix} {
-      flex: $size;
-      -webkit-flex: $size;
-    }
-  }
-}
-
-@each $suffix, $size in $grid {
-  @media screen and (min-width: $large-breakpoint) {
-    .large-#{$suffix} {
-      flex: $size;
-      -webkit-flex: $size;
+    @each $suffix, $size in $grid {
+      .#{$prefix}-#{$suffix} {
+        flex: $size;
+        -webkit-flex: $size;
+      }
     }
   }
 }
