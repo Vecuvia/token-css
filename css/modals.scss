@@ -22,13 +22,13 @@
   -webkit-transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 24em) {
+@media screen and (min-width: $small-breakpoint) {
   .modal-content {
     width: 70%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: $large-breakpoint) {
   .modal-content {
     width: 50%;
   }
