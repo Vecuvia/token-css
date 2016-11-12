@@ -63,6 +63,31 @@ hr {
   max-width: $max-width;
 }
 
+/* Code */
+
+:not(pre) > code {
+  border: 1px solid $primary-color-muted;
+  background-color: $background-color-darker;
+  border-radius: 2px;
+  padding: 0 0.2em;
+}
+
+pre {
+  border: 1px solid $primary-color-muted;
+  background-color: $background-color-darker;
+  border-radius: 2px;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+kbd {
+  border: 1px solid $primary-color;
+  border-bottom: 3px double $primary-color;
+  background-color: $primary-color-muted;
+  border-radius: 2px;
+  padding: 0 0.2em;
+}
+
 /* Headers */
 
 h1 {

@@ -167,6 +167,27 @@ hr {
   width: 90%;
   max-width: 60em; }
 
+/* Code */
+:not(pre) > code {
+  border: 1px solid #9e9e9e;
+  background-color: #eeeeee;
+  border-radius: 2px;
+  padding: 0 0.2em; }
+
+pre {
+  border: 1px solid #9e9e9e;
+  background-color: #eeeeee;
+  border-radius: 2px;
+  padding: 1em;
+  margin: 1em 0; }
+
+kbd {
+  border: 1px solid #212121;
+  border-bottom: 3px double #212121;
+  background-color: #9e9e9e;
+  border-radius: 2px;
+  padding: 0 0.2em; }
+
 /* Headers */
 h1 {
   font-size: 2em; }
