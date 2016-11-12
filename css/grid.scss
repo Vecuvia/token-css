@@ -1,5 +1,21 @@
 /* Responsive grid */
 
+$grid: (
+  auto: 1 0,
+  full: 0 0 100%,
+  half: 0 0 50%,
+  third: 0 0 33.3333333333%,
+  fourth: 0 0 25%,
+  fifth: 0 0 20%,
+  sixth: 0 0 16.6666666666%
+);
+
+$breakpoints: (
+  small: $small-breakpoint,
+  medium: $medium-breakpoint,
+  large: $large-breakpoint
+);
+
 .row {
   @include flex-row;
   flex-wrap: wrap;
@@ -15,20 +31,6 @@
   flex: 1;
   -webkit-flex: 1;
 }
-
-$grid: (
-  auto: 1 0,
-  full: 0 0 100%,
-  half: 0 0 50%,
-  third: 0 0 33.3333333333%,
-  fourth: 0 0 25%
-);
-
-$breakpoints: (
-  small: $small-breakpoint,
-  medium: $medium-breakpoint,
-  large: $large-breakpoint
-);
 
 .x-small-hidden {
   display: none;

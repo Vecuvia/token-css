@@ -253,6 +253,14 @@ h5, h6 {
   flex: 0 0 25%;
   -webkit-flex: 0 0 25%; }
 
+.x-small-fifth {
+  flex: 0 0 20%;
+  -webkit-flex: 0 0 20%; }
+
+.x-small-sixth {
+  flex: 0 0 16.66667%;
+  -webkit-flex: 0 0 16.66667%; }
+
 @media screen and (min-width: 30em) {
   .small-hidden {
     display: none; }
@@ -275,7 +283,15 @@ h5, h6 {
 
   .small-fourth {
     flex: 0 0 25%;
-    -webkit-flex: 0 0 25%; } }
+    -webkit-flex: 0 0 25%; }
+
+  .small-fifth {
+    flex: 0 0 20%;
+    -webkit-flex: 0 0 20%; }
+
+  .small-sixth {
+    flex: 0 0 16.66667%;
+    -webkit-flex: 0 0 16.66667%; } }
 @media screen and (min-width: 60em) {
   .medium-hidden {
     display: none; }
@@ -298,7 +314,15 @@ h5, h6 {
 
   .medium-fourth {
     flex: 0 0 25%;
-    -webkit-flex: 0 0 25%; } }
+    -webkit-flex: 0 0 25%; }
+
+  .medium-fifth {
+    flex: 0 0 20%;
+    -webkit-flex: 0 0 20%; }
+
+  .medium-sixth {
+    flex: 0 0 16.66667%;
+    -webkit-flex: 0 0 16.66667%; } }
 @media screen and (min-width: 80em) {
   .large-hidden {
     display: none; }
@@ -321,7 +345,15 @@ h5, h6 {
 
   .large-fourth {
     flex: 0 0 25%;
-    -webkit-flex: 0 0 25%; } }
+    -webkit-flex: 0 0 25%; }
+
+  .large-fifth {
+    flex: 0 0 20%;
+    -webkit-flex: 0 0 20%; }
+
+  .large-sixth {
+    flex: 0 0 16.66667%;
+    -webkit-flex: 0 0 16.66667%; } }
 /* Buttons */
 .button {
   font-size: 1em;
