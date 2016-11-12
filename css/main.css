@@ -252,6 +252,10 @@ h5, h6 {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap; }
 
+.gutter {
+  margin-left: -1em;
+  margin-righ: -1em; }
+
 .gutter > .col {
   padding-left: 1em;
   padding-right: 1em;
@@ -539,6 +543,9 @@ input, textarea {
 label {
   font-weight: bold; }
 
+:not(.form-inline) > label {
+  width: 100%; }
+
 :not(.form-inline) > input[type="text"] {
   width: 100%; }
 
@@ -551,6 +558,9 @@ label {
 :not(.form-inline) > textarea {
   min-width: 100%;
   max-width: 100%; }
+
+:not(.form-inline) > select {
+  width: 100%; }
 
 /* Utility classes */
 .padded {
