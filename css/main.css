@@ -194,12 +194,14 @@ hr {
 
 /* Code */
 :not(pre) > code {
+  font-family: monospace;
   border: 1px solid #878787;
   background-color: #e6e6e6;
   border-radius: 2px;
   padding: 0 0.2em; }
 
 pre {
+  font-family: monospace;
   border: 1px solid #878787;
   background-color: #e6e6e6;
   border-radius: 2px;
@@ -207,6 +209,7 @@ pre {
   margin: 1em 0; }
 
 kbd {
+  font-family: monospace;
   border: 1px solid #212121;
   border-bottom: 3px double #212121;
   background-color: #878787;
