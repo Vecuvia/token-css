@@ -364,7 +364,8 @@ h5, h6 {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   display: inline-block;
   margin-top: 0.5em;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  box-sizing: border-box; }
 
 .button-small {
   padding: 0em; }
@@ -377,6 +378,15 @@ h5, h6 {
 
 .button-full {
   width: 100%; }
+
+.button-round {
+  border-radius: 2048px; }
+
+.button-square {
+  border-radius: 0; }
+
+.button-outline {
+  border: 2px solid #212121; }
 
 .button-default {
   background-color: #ffffff;
@@ -461,10 +471,10 @@ h5, h6 {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%); }
 
-@media screen and (min-width: 24em) {
+@media screen and (min-width: 30em) {
   .modal-content {
     width: 70%; } }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 80em) {
   .modal-content {
     width: 50%; } }
 /* Utility classes */

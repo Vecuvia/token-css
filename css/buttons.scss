@@ -10,6 +10,7 @@
   display: inline-block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  box-sizing: border-box;
 }
 
 .button-small {
@@ -26,6 +27,18 @@
 
 .button-full {
   width: 100%;
+}
+
+.button-round {
+  border-radius: 2048px;
+}
+
+.button-square {
+  border-radius: 0;
+}
+
+.button-outline {
+  border: 2px solid $primary-color;
 }
 
 .button-default {
