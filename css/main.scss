@@ -16,6 +16,8 @@ $breakpoints: (
 );
 
 $background-color: #ffffff;
+$background-color-darker: #eeeeee;
+
 $light-text-color: #ffffff;
 $dark-text-color: #000000;
 
@@ -65,4 +67,5 @@ html, body {
 @import "alerts";
 @import "wells";
 @import "modals";
+@import "tables";
 @import "utility";
