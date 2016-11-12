@@ -9,6 +9,12 @@ $small-breakpoint: 30em;
 $medium-breakpoint: 60em;
 $large-breakpoint: 80em;
 
+$breakpoints: (
+  small: $small-breakpoint,
+  medium: $medium-breakpoint,
+  large: $large-breakpoint
+);
+
 $background-color: #ffffff;
 $light-text-color: #ffffff;
 $dark-text-color: #000000;

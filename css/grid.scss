@@ -10,12 +10,6 @@ $grid: (
   sixth: 0 0 16.6666666666%
 );
 
-$breakpoints: (
-  small: $small-breakpoint,
-  medium: $medium-breakpoint,
-  large: $large-breakpoint
-);
-
 .row {
   @include flex-row;
   flex-wrap: wrap;
