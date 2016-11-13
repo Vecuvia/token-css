@@ -1,6 +1,6 @@
 /* Forms */
 
-input, textarea {
+input, select, textarea {
   box-sizing: border-box;
 }
 
@@ -15,9 +15,36 @@ label {
 $input-types: (text, email, password);
 
 @each $type in $input-types {
+  input[type="#{$type}"] {
+    border: 0;
+    background-color: $background-color;
+    border-bottom: 2px solid lighten($primary-color, 40%);
+  }
+
+  input[type="#{$type}"]:focus {
+    border-color: $primary-color;
+  }
+
   :not(.form-inline) > input[type="#{$type}"] {
     width: 100%;
   }
+}
+
+input:invalid {
+  box-shadow: none;
+  border-color: $danger-color;
+}
+
+textarea {
+  border: 0;
+  background-color: $background-color;
+  border-bottom: 2px solid lighten($primary-color, 40%);
+  font-family: $font-family;
+  font-size: 1em;
+}
+
+textarea:focus {
+  border-color: $primary-color;
 }
 
 :not(.form-inline) > textarea {

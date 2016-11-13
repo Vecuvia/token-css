@@ -280,7 +280,7 @@ h5, h6 {
 
 .gutter {
   margin-left: -1em;
-  margin-righ: -1em; }
+  margin-right: -1em; }
 
 .gutter > .col {
   padding-left: 1em;
@@ -612,7 +612,7 @@ h5, h6 {
   background-color: #e6e6e6; }
 
 /* Forms */
-input, textarea {
+input, select, textarea {
   box-sizing: border-box; }
 
 label {
@@ -621,14 +621,52 @@ label {
 :not(.form-inline) > label {
   width: 100%; }
 
+input[type="text"] {
+  border: 0;
+  background-color: #ffffff;
+  border-bottom: 2px solid #878787; }
+
+input[type="text"]:focus {
+  border-color: #212121; }
+
 :not(.form-inline) > input[type="text"] {
   width: 100%; }
+
+input[type="email"] {
+  border: 0;
+  background-color: #ffffff;
+  border-bottom: 2px solid #878787; }
+
+input[type="email"]:focus {
+  border-color: #212121; }
 
 :not(.form-inline) > input[type="email"] {
   width: 100%; }
 
+input[type="password"] {
+  border: 0;
+  background-color: #ffffff;
+  border-bottom: 2px solid #878787; }
+
+input[type="password"]:focus {
+  border-color: #212121; }
+
 :not(.form-inline) > input[type="password"] {
   width: 100%; }
+
+input:invalid {
+  box-shadow: none;
+  border-color: #f44336; }
+
+textarea {
+  border: 0;
+  background-color: #ffffff;
+  border-bottom: 2px solid #878787;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1em; }
+
+textarea:focus {
+  border-color: #212121; }
 
 :not(.form-inline) > textarea {
   min-width: 100%;
