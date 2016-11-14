@@ -19,6 +19,8 @@ $input-types: (text, email, password);
     border: 0;
     background-color: $background-color;
     border-bottom: 2px solid lighten($primary-color, 40%);
+    font-family: $font-family;
+    font-size: 1em;
   }
 
   input[type="#{$type}"]:focus {
