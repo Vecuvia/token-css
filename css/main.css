@@ -81,6 +81,9 @@ body, .flex-column {
   flex-shrink: 0;
   -webkit-flex-shrink: 0; }
 
+.footer a {
+  color: #ffffff; }
+
 .footer p {
   margin: 0; }
 

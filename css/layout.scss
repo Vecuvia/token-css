@@ -75,6 +75,10 @@ body, .flex-column {
   @include flex-no-shrink;
 }
 
+.footer a {
+  color: contrasting-color($primary-color);
+}
+
 .footer p {
   margin: 0;
 }
