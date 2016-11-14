@@ -283,7 +283,8 @@ h5, h6 {
 
 .gutter {
   margin-left: -1em;
-  margin-right: -1em; }
+  margin-right: -1em;
+  max-width: 100%; }
 
 .gutter > .col {
   padding-left: 1em;
