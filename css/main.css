@@ -517,7 +517,7 @@ h5, h6 {
 .alert {
   padding: 1em;
   box-sizing: border-box;
-  border-left: 4px solid; }
+  border-left: 8px solid; }
 
 .alert-primary {
   border-left-color: #212121;
