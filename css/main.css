@@ -42,7 +42,7 @@ body, .flex-column {
   flex-shrink: 0;
   -webkit-flex-shrink: 0; }
 
-.navbar-links a {
+.navbar a {
   color: #ffffff; }
 
 /* Header */
